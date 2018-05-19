@@ -46,6 +46,13 @@ app.get("/about", (request, response) => {
   });
 });
 
+app.get("/projects", (request, response) => {
+  response.render("projects.hbs", {
+    name: "Chandan",
+    message: "Projects"
+  });
+});
+
 app.listen(port, () => {
   console.log(`Server listening to port ${port}`);
 });
